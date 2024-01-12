@@ -6,5 +6,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     e_playarea.addEventListener("click", (event) => {
         console.log(event.target === e_target ? "Treffer!" : "Daneben!");
+        e_target.style.top = 0;
+        e_target.style.left = 0;
     });
 });
